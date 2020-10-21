@@ -1,0 +1,44 @@
+header{
+    padding: 10px;
+    text-align: center;
+    background: rgb(65, 153, 225);
+    color: white;
+    font-size: 30px;
+
+}
+
+body{
+    background-color: rgba(2, 2, 2, 0.2);
+}
+
+.searchArea{
+    margin-top: 10px;
+    background: rgb(177, 214, 245);
+}
+
+.searchBtn{
+    background: rgb(65, 153, 225);
+    color: white;
+    border-color: rgb(65, 153, 225);
+}
+
+.cityBtn{
+    background: rgb(65, 153, 225, 0.5);
+    color: white;
+    border-radius: 7px;
+    border-color: rgb(65, 153, 225, 0.5);
+    margin-top: 10px;
+}
+
+.card-body{
+    background: rgb(65, 153, 225);
+    margin: 5px;
+}
+
+.forecast p{
+    color: white;
+}
+
+span {
+    padding: 5px;
+}
