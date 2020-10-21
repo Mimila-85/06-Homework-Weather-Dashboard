@@ -102,7 +102,7 @@ $(document).ready(function(){
             var dayIcon = response.weather[0].icon;
 
             // Create an image tag. Add an attribute with the image address and add image name saved in variavle dayIcon.
-            var imgDayIcon = $("<img>").attr("src", "http://openweathermap.org/img/wn/" + dayIcon + ".png");
+            var imgDayIcon = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + dayIcon + ".png");
             
             // Append new span and image tag to the created h2 tag.
             newh2.append(newH2Span, imgDayIcon);
@@ -134,7 +134,7 @@ $(document).ready(function(){
             function getUV(){
 
                 // Created variable to hold API url along with  key, and the searched city latitute and longitude.
-                var uvURL = "http://api.openweathermap.org/data/2.5/uvi?lat=" + latitude + "&lon=" + long + "&appid=" + APIKey
+                var uvURL = "https://api.openweathermap.org/data/2.5/uvi?lat=" + latitude + "&lon=" + long + "&appid=" + APIKey
 
                     // AJAX call function for to get the UV API response.
                     $.ajax({
@@ -180,7 +180,7 @@ $(document).ready(function(){
             function futureDates(){
                 
                 // Created variable to hold the forecast URL, adding the user search city name, API key, and unit change from standard to imperial.
-                var forecastURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + APIKey + imperialUnit
+                var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + APIKey + imperialUnit
 
                 // AJAX call for the specific city search by the user.
                 $.ajax({
@@ -218,7 +218,7 @@ $(document).ready(function(){
                         var forDayIcon = forecastArray[i].weather[0].icon;
 
                         // Create a new img tag, and add an attribute with the image address along with the icon name held in the forDayIcon variable.
-                        var imgForDayIcon = $("<img>").attr("src", "http://openweathermap.org/img/wn/" + forDayIcon + ".png");
+                        var imgForDayIcon = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + forDayIcon + ".png");
                         
                         // Create p tage to display the temperature.
                         var pForTemp = $("<p>").text("Temperature: " + forecastArray[i].main.temp + " ℉");
