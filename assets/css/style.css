@@ -22,6 +22,12 @@ body{
     border-color: rgb(65, 153, 225);
 }
 
+.cleanBtn{
+    background: rgb(65, 153, 225);
+    color: white;
+    border-color: rgb(65, 153, 225);
+}
+
 .cityBtn{
     background: rgb(65, 153, 225, 0.5);
     color: white;

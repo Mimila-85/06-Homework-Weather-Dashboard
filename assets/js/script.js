@@ -62,6 +62,17 @@ $(document).ready(function(){
         currentDay(city, true);   
                    
     })
+
+    // Event listner for the clean button. This gives an option to user to clean the previous searched cities.
+    $(".cleanBtn").on("click", function (event){
+        event.preventDefault();
+        // Clean local storage.
+        localStorage.clear();
+        // Clean elements from array.
+        savedCity = [];
+        // Remove city buttons.
+        $(".cityBtn").remove();
+    })
     
     // currentDay function runs with the giving city from where the function is called, and with the createButton boolean true or false.
     function currentDay(inputCity, createButton){
