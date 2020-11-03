@@ -137,8 +137,10 @@ $(document).ready(function(){
             // Calls the function that runs the AJAX with the UV API.
             getUV();
 
+            var imageUV = $("<img class='imgUv'>").attr("src", "https://www.epa.gov/sites/production/files/sunwise/images/uviscaleh_lg.gif");
+
             // Clears the div with the today class, and add the response for the new city searched.
-            today.empty().append(newh2, ptemp, phumidity, pwindSpeed, pUV);
+            today.empty().append(newh2, ptemp, phumidity, pwindSpeed, pUV, imageUV);
 
             
 

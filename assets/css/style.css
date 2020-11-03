@@ -48,3 +48,8 @@ body{
 span {
     padding: 5px;
 }
+
+.imgUv {
+    width: 250px;
+    height: 50px;
+}
