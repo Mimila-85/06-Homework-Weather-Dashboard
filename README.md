@@ -20,7 +20,7 @@ When users refresh the page the last search city is populated in the page. The b
 Users can clean all the previous searched cities, deleting all buttons, clicking on the button "Clean Previous Search".
 
 ## Link
-[Weather Dashboard](https://mimila-85.github.io/06-Homework-Weather-Dashboard/)
+[Weather Dashboard](https://mimila-85.github.io/Weather-Dashboard/)
 
 ## Visual Representation
 You can see at this demo a representation of the UV color code. Cities have been searched in order of low UV index to high UV index on purpose to show the different color codes functionality.
