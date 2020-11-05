@@ -110,9 +110,9 @@ $(document).ready(function(){
             <h2>${cityName}<span>(${d.getMonth()+1}/${d.getDate()}/${d.getFullYear()})</span>
             <img src="https://openweathermap.org/img/wn/${dayIcon}.png"></img>
             </h2>
-            <p>Temperature: ${response.main.temp} ℉</p>
-            <p>Humidity: ${response.main.humidity}%</p>
-            <p>Wind Speed: ${response.wind.speed} mph;
+            <p>Temperature: <span class="bold">${response.main.temp}</span> ℉</p>
+            <p>Humidity: <span class="bold">${response.main.humidity}</span>%</p>
+            <p>Wind Speed: <span class="bold">${response.wind.speed}</span> mph;
             <p class="uv">UV Index: </p>
             <img class='imgUv' src="https://www.epa.gov/sites/production/files/sunwise/images/uviscaleh_lg.gif" alt="UV Color Scale"></img>
             <br>
@@ -146,7 +146,7 @@ $(document).ready(function(){
                     $(".spUv").remove();
 
                     // Created a span tag with the UV response.
-                    const spanUV = $("<span class='spUv'>").text(uv);
+                    const spanUV = $("<span class='spUv bold'>").text(uv);
 
                     // Append the span tag to the p tag created previously.
                     $(".uv").append(spanUV);
@@ -212,10 +212,10 @@ $(document).ready(function(){
 
                         // Create a new div with bootstrap class card-body for each result.
                         const newDivCardBody = `<div class="card-body">
-                        <p>${forDate.getMonth()+1}/${forDate.getDate()}/${forDate.getFullYear()}
-                        <img src="https://openweathermap.org/img/wn/${forDayIcon}.png"></img>
-                        <p>Temperature: ${forecastArray[i].main.temp} ℉<p>
-                        <p>Humidity: ${forecastArray[1].main.humidity}%</p>
+                        <p><span class="bold">${forDate.getMonth()+1}/${forDate.getDate()}/${forDate.getFullYear()}</span>
+                        <img src="https://openweathermap.org/img/wn/${forDayIcon}.png"></img></p>
+                        <p>Temperature: <span class="bold">${forecastArray[i].main.temp}</span> ℉<p>
+                        <p>Humidity: <span class="bold">${forecastArray[1].main.humidity}</span>%</p>
                         </div>  
                         `
                         // Append the div with class card-body to the div with class card-deck.
